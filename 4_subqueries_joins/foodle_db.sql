@@ -38,18 +38,6 @@ CREATE TABLE menu_items (
   FOREIGN KEY (restaurant_id) REFERENCES restaurants(restaurant_id)
 );
 
--- Create the orders table
-CREATE TABLE orders (
-  order_id INT NOT NULL AUTO_INCREMENT,
-  user_id INT NOT NULL,
-  restaurant_id INT NOT NULL,
-  total DECIMAL(10, 2) NOT NULL,
-  status VARCHAR(20) NOT NULL,
-  PRIMARY KEY (order_id),
-  FOREIGN KEY (user_id) REFERENCES users(user_id),
-  FOREIGN KEY (restaurant_id) REFERENCES restaurants(restaurant_id)
-);
-
 -- Create the drivers table
 CREATE TABLE drivers (
   driver_id INT NOT NULL AUTO_INCREMENT,
@@ -59,28 +47,21 @@ CREATE TABLE drivers (
   PRIMARY KEY (driver_id)
 );
 
--- Create the payments table
-CREATE TABLE payments (
-  payment_id INT NOT NULL AUTO_INCREMENT,
-  order_id INT NOT NULL,
-  payment_method VARCHAR(50) NOT NULL,
-  amount DECIMAL(10, 2) NOT NULL,
-  status VARCHAR(20) NOT NULL,
-  PRIMARY KEY (payment_id),
-  FOREIGN KEY (order_id) REFERENCES orders(order_id)
-);
 
--- Create the ratings table
-CREATE TABLE ratings (
-  rating_id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE orders (
+  order_id INT NOT NULL AUTO_INCREMENT,
   user_id INT NOT NULL,
   restaurant_id INT NOT NULL,
-  rating INT NOT NULL,
-  PRIMARY KEY (rating_id),
+  driver_id INT,
+  total DECIMAL(10, 2) NOT NULL,
+  status VARCHAR(20) NOT NULL,
+  order_date DATE NOT NULL,
+  PRIMARY KEY (order_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id),
   FOREIGN KEY (restaurant_id) REFERENCES restaurants(restaurant_id),
-  CHECK (rating >= 1 AND rating <= 5)
+  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id) -- new foreign key definition
 );
+
 
 -- Create the promotions table
 CREATE TABLE promotions (
