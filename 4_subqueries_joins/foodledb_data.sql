@@ -41,10 +41,10 @@ VALUES
 ('Paradise Biryani', 'D Block, 6-3-870, Greenlands Rd, Begumpet, Hyderabad', '0402222777', 'Biryani', 3.7),
 ('Tunday Kababi', '168/6, Birhana Rd, Kaiserbagh, Lucknow', '0522333444', 'Awadhi', 4.1),
 ('Peter Cat', '18A, Park St, Kolkata', '0334455888', 'Continental', 4.3),
-('Karim's', '16, Gali Kababian, Jama Masjid, Old Delhi', '0112345678', 'Mughlai', 3.6),
+('Karims', '16, Gali Kababian, Jama Masjid, Old Delhi', '0112345678', 'Mughlai', 3.6),
 ('Bikanerwala', 'Ground Floor, MGF Metropolitan Mall, Saket, New Delhi', '0112345678', 'North Indian', 4.2),
 ('Saravana Bhavan', 'No 32, Ground Floor, Evershine Mall, Link Road, Malad West, Mumbai', '0222288666', 'South Indian', 4.4),
-('Nizam's', 'Near Charminar, Hyderabad', '0402233444', 'Hyderabadi', 3.5),
+('Nizams', 'Near Charminar, Hyderabad', '0402233444', 'Hyderabadi', 3.5),
 ('Peshawari', 'ITC Maratha, Sahar Road, Opposite Chhatrapati Shivaji Airport, Andheri East, Mumbai', '0222233444', 'North Indian', 4.7),
 ('Karavalli', 'Gateway Hotel, 66, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru', '0802233444', 'Coastal', 4.1),
 ('Trishna', '7, Saibaba Marg, Kala Ghoda, Fort, Mumbai', '0222266160', 'Seafood', 4.3),
@@ -58,7 +58,7 @@ VALUES
 ('Kappa Chakka Kandhari', 'Link Road, Oshiwara, Andheri West, Mumbai', '02240031200', 'South Indian', 4.2),
 ('Dum Pukht', 'ITC Maratha, Sahar Airport Road, Andheri East, Mumbai', '02228303030', 'North Indian', 3.5),
 ('Gajalee', 'Hanuman Road, Vile Parle East, Mumbai', '02226141901', 'Seafood, Maharashtrian', 4.1),
-('Café Madras', 'King's Circle, Matunga East, Mumbai', '02224143128', 'South Indian', 4.0),
+('Café Madras', 'Kings Circle, Matunga East, Mumbai', '02224143128', 'South Indian', 4.0),
 ('Bastian', 'B/1, New Kamal Building, Linking Road, Bandra West, Mumbai', '02226425544', 'Seafood, European, American', 4.6),
 ('Yauatcha', 'Raheja Tower, Bandra Kurla Complex, Bandra East, Mumbai', '09222222800', 'Chinese, Dim Sum', 4.4),
 ('Hauz Khas Social', '12, Hauz Khas Village, New Delhi', '07838652823', 'Continental, American, North Indian', 4.3),
@@ -66,9 +66,11 @@ VALUES
 ('Saravana Bhavan', 'P-13, Connaught Circus, Connaught Place, New Delhi', '01123417910', 'South Indian', 4.2),
 ('Bukhara', 'ITC Maurya, Chanakyapuri, New Delhi', '01126112233', 'North Indian, Mughlai', 4.7),
 ('Dum Pukht', 'ITC Maurya, Chanakyapuri, New Delhi', '01126112233', 'North Indian', 4.6),
-('Karim's', '16, Gali Kababian, Jama Masjid, New Delhi', '01123269880', 'Mughlai, North Indian', 4.0),
+('Karims Noida', '44, Noida, Noida', '01203269880', 'Mughlai, North Indian', 3.0),
 ('Rajinder Da Dhaba', 'AB 14, Safdarjung Enclave Market, Safdarjung, New Delhi', '01126100359', 'North Indian', 4.1),
 ('The China Kitchen', 'Hyatt Regency, Bhikaji Cama Place, New Delhi', '01166771334', 'Chinese', 4.4);
+
+
 
 -- Pind Balluchi
 INSERT INTO menu_items (restaurant_id, name, description, price)
