@@ -452,3 +452,32 @@ WHILE @i <= 500 DO
   SET @i = @i + 1;
 END WHILE;
 
+-- Set the start and end dates for the promotions
+DECLARE @startDate DATE = DATEADD(day, 1, GETDATE())
+DECLARE @endDate DATE = DATEADD(month, 3, @startDate)
+
+-- Generate promotions for each restaurant
+DECLARE @i INT = 1
+WHILE @i <= (SELECT COUNT(*) FROM restaurants)
+BEGIN
+-- Get the restaurant ID, cuisine, and name
+DECLARE @restaurantId INT = (SELECT restaurant_id FROM restaurants ORDER BY restaurant_id OFFSET @i - 1 ROWS FETCH NEXT 1 ROW ONLY)
+DECLARE @cuisine VARCHAR(50) = (SELECT cuisine FROM restaurants WHERE restaurant_id = @restaurantId)
+DECLARE @restaurantName VARCHAR(100) = (SELECT name FROM restaurants WHERE restaurant_id = @restaurantId)
+
+-- Generate a unique promo code for the restaurant
+DECLARE @promoCode VARCHAR(20) = CONCAT(LEFT(@restaurantName, 2), '', LEFT(@cuisine, 2), '', @i)
+
+-- Generate a random discount between 10% and 50%
+DECLARE @discount DECIMAL(10, 2) = ROUND(RAND() * 0.4 + 0.1, 2)
+
+-- Generate a random start date and end date within the next 3 months
+DECLARE @promoStartDate DATE = DATEADD(day, ROUND(RAND() * 30), @startDate)
+DECLARE @promoEndDate DATE = DATEADD(day, ROUND(RAND() * 30) + 30, @promoStartDate)
+
+-- Insert the promotion into the promotions table
+INSERT INTO promotions (restaurant_id, promo_code, discount, start_date, end_date)
+VALUES (@restaurantId, @promoCode, @discount, @promoStartDate, @promoEndDate)
+
+SET @i = @i + 1
+END
