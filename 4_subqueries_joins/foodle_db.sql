@@ -21,9 +21,11 @@ CREATE TABLE users (
 -- Create the restaurants table
 CREATE TABLE restaurants (
   restaurant_id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(50) NOT NULL,
+  name VARCHAR(100) NOT NULL,
   address VARCHAR(200) NOT NULL,
-  phone_number VARCHAR(20) NOT NULL,
+  phone_number VARCHAR(15) NOT NULL,
+  cuisine VARCHAR(50) NOT NULL,
+  rating DECIMAL(2,1) NOT NULL,
   PRIMARY KEY (restaurant_id)
 );
 
