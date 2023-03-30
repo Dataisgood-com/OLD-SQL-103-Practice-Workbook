@@ -389,3 +389,44 @@ VALUES
 (40, 'Sesame Balls', 'Deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds', 150),
 (40, 'Lychee Ice Cream', 'Creamy ice cream flavored with sweet lychees', 200);
 
+-- Sample data for the orders table
+INSERT INTO orders (user_id, restaurant_id, total, status, order_date)
+SELECT 
+  ROUND(RAND() * 20) + 1, -- random user IDs
+  ROUND(RAND() * 15) + 11, -- random restaurant IDs
+  ROUND(RAND() * 3000) + 500, -- random total amount between 500 and 3500
+  IF(DATEDIFF(NOW(), DATE_ADD(DATE(NOW()), INTERVAL -2 DAY)) > 0, -- check if order is pending based on current date
+    IF(DATEDIFF(NOW(), DATE_ADD(order_date, INTERVAL 2 DAY)) <= 0, 'pending', 'completed'), 'completed'), -- set status based on order date
+  DATE_ADD(DATE(NOW()), INTERVAL -ROUND(RAND() * 365) DAY) -- random order date within the past year
+FROM
+  information_schema.TABLES T1,
+  information_schema.TABLES T2;
+
+
+INSERT INTO drivers (name, phone_number, location)
+VALUES
+('Tanmay Bhat', '9876543210', 'Mumbai'),
+('Biswa Kalyan Rath', '9876543211', 'Mumbai'),
+('Kenny Sebastian', '9876543212', 'Bangalore'),
+('Zakir Khan', '9876543213', 'Delhi'),
+('Abish Mathew', '9876543214', 'Mumbai'),
+('Kanan Gill', '9876543215', 'Bangalore'),
+('Jaspreet Singh', '9876543216', 'Mumbai'),
+('Naveen Richard', '9876543217', 'Bangalore'),
+('Kunal Kamra', '9876543218', 'Mumbai'),
+('Sumukhi Suresh', '9876543219', 'Bangalore'),
+('Prashasti Singh', '9876543220', 'Delhi'),
+('Karthik Kumar', '9876543221', 'Chennai'),
+('Abijit Ganguly', '9876543222', 'Kolkata'),
+('Sorabh Pant', '9876543223', 'Mumbai'),
+('Atul Khatri', '9876543224', 'Mumbai'),
+('Sapan Verma', '9876543225', 'Mumbai'),
+('Kenny Zimlinghaus', '9876543226', 'Mumbai'),
+('Aadar Malik', '9876543227', 'Mumbai'),
+('Varun Thakur', '9876543228', 'Mumbai'),
+('Nishant Tanwar', '9876543229', 'Delhi'),
+('Anubhav Singh Bassi', '9876543230', 'Delhi'),
+('Rahul Subramanian', '9876543231', 'Mumbai'),
+('Aditi Mittal', '9876543232', 'Mumbai'),
+('Urooj Ashfaq', '9876543233', 'Mumbai'),
+('Rahul Dua', '9876543234', 'Mumbai');
