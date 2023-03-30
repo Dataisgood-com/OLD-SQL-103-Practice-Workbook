@@ -244,7 +244,7 @@ VALUES
 (20, 'Lamb Chops', 'Grilled lamb chops marinated in Indian spices.', 700),
 (20, 'Chicken Tikka', 'Chicken marinated in a spicy yogurt-based marinade and grilled.', 400),
 (20, 'Dal Fry', 'Yellow lentils tempered with cumin seeds, garlic, and spices.', 250),
-(20, 'Goan Fish Curry', 'Fish cooked in a tangy coconut-based sauce with Goan spices.', 400),
+(20, 'Goan Fish Curry', 'Fish cooked in a tangy coconut-based sauce with Goan spices.', 400);
 
 -- Populate the menu_items table for 21st restaurant
 INSERT INTO menu_items (restaurant_id, name, description, price)
@@ -347,49 +347,25 @@ INSERT INTO menu_items (restaurant_id, name, description, price)
 VALUES
 (35, 'Gujarati Thali', 'A traditional Gujarati platter consisting of dal, kadhi, shaak, roti, rice, and dessert.', 400),
 (35, 'Undhiyu', 'A mixed vegetable dish cooked with a blend of spices.', 300),
-(35, 'Khandvi', 'Soft and thin gram flour rolls filled with coconut and spices.', 150);
-
--- Populate the menu_items table for 36th restaurant
-INSERT INTO menu_items (restaurant_id, name, description, price)
-VALUES
-(36, 'Chicken Biryani', 'Flavorful rice dish cooked with chicken and aromatic spices.', 350),
-(36, 'Hyderabadi Haleem', 'A stew made with lamb, lentils, and wheat, slow-cooked for hours.', 250),
-(36, 'Lukhmi', 'A pastry filled with minced meat and spices.', 150);
-
--- Populate the menu_items table for 37th restaurant
-INSERT INTO menu_items (restaurant_id, name, description, price)
-VALUES
-(37, 'Prawn Gassi', 'Prawns cooked in a coconut-based gravy with aromatic spices.', 450),
-(37, 'Kori Rotti', 'A Mangalorean dish consisting of chicken curry and crispy rice wafers.', 350),
-(37, 'Pineapple Gojju', 'A sweet and sour dish made with pineapple and coconut.', 150);
-
--- Populate the menu_items table for 38th restaurant
-INSERT INTO menu_items (restaurant_id, name, description, price)
-VALUES
-(38, 'Keema Pao', 'Minced meat cooked with spices served with bread.', 200),
-(38, 'Butter Chicken', 'Tandoori chicken cooked in a creamy tomato-based gravy.', 350),
-(38, 'Rogan Josh', 'Lamb cooked in a spicy and aromatic gravy.', 400);
-
-INSERT INTO menu_items (restaurant_id, name, description, price)
-VALUES
-(39, 'Butter Chicken', 'Boneless chicken pieces cooked in a rich tomato and cream-based gravy', 450),
-(39, 'Dal Makhani', 'Slow-cooked black lentils in a creamy tomato gravy, finished with butter and cream', 300),
-(39, 'Tandoori Chicken', 'Chicken marinated in spices and grilled in a tandoor oven', 500),
-(39, 'Paneer Tikka', 'Cubes of paneer marinated in spices and grilled in a tandoor oven', 350),
-(39, 'Lachha Paratha', 'Multi-layered whole wheat bread cooked on a tawa', 70),
-(39, 'Naan', 'Leavened bread made with refined flour, baked in a tandoor oven', 60),
-(39, 'Jeera Rice', 'Basmati rice flavored with cumin seeds', 120),
-(39, 'Chicken Biryani', 'Fragrant basmati rice cooked with chicken and spices', 300),
-(39, 'Raita', 'Yogurt mixed with chopped onions, tomatoes, and cucumbers, seasoned with cumin', 80),
-(40, 'Hot and Sour Soup', 'Spicy and tangy soup made with mushrooms, bamboo shoots, and tofu', 250),
-(40, 'Kung Pao Chicken', 'Stir-fried chicken with peanuts, bell peppers, and dried red chilies', 450),
-(40, 'Szechuan Prawns', 'Stir-fried prawns with vegetables in a spicy Szechuan sauce', 550),
-(40, 'Vegetable Fried Rice', 'Fried rice made with mixed vegetables and soy sauce', 200),
-(40, 'Vegetable Manchurian', 'Deep-fried vegetable balls in a spicy sauce', 350),
-(40, 'Hakka Noodles', 'Stir-fried noodles made with vegetables and soy sauce', 250),
-(40, 'Chilli Paneer', 'Cubes of paneer stir-fried with bell peppers and onions in a spicy sauce', 400),
-(40, 'Sesame Balls', 'Deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds', 150),
-(40, 'Lychee Ice Cream', 'Creamy ice cream flavored with sweet lychees', 200);
+(35, 'Khandvi', 'Soft and thin gram flour rolls filled with coconut and spices.', 150),
+(35, 'Butter Chicken', 'Boneless chicken pieces cooked in a rich tomato and cream-based gravy', 450),
+(35, 'Dal Makhani', 'Slow-cooked black lentils in a creamy tomato gravy, finished with butter and cream', 300),
+(35, 'Tandoori Chicken', 'Chicken marinated in spices and grilled in a tandoor oven', 500),
+(35, 'Paneer Tikka', 'Cubes of paneer marinated in spices and grilled in a tandoor oven', 350),
+(35, 'Lachha Paratha', 'Multi-layered whole wheat bread cooked on a tawa', 70),
+(35, 'Naan', 'Leavened bread made with refined flour, baked in a tandoor oven', 60),
+(35, 'Jeera Rice', 'Basmati rice flavored with cumin seeds', 120),
+(35, 'Chicken Biryani', 'Fragrant basmati rice cooked with chicken and spices', 300),
+(35, 'Raita', 'Yogurt mixed with chopped onions, tomatoes, and cucumbers, seasoned with cumin', 80),
+(35, 'Hot and Sour Soup', 'Spicy and tangy soup made with mushrooms, bamboo shoots, and tofu', 250),
+(36, 'Kung Pao Chicken', 'Stir-fried chicken with peanuts, bell peppers, and dried red chilies', 450),
+(36, 'Szechuan Prawns', 'Stir-fried prawns with vegetables in a spicy Szechuan sauce', 550),
+(36, 'Vegetable Fried Rice', 'Fried rice made with mixed vegetables and soy sauce', 200),
+(36, 'Vegetable Manchurian', 'Deep-fried vegetable balls in a spicy sauce', 350),
+(36, 'Hakka Noodles', 'Stir-fried noodles made with vegetables and soy sauce', 250),
+(36, 'Chilli Paneer', 'Cubes of paneer stir-fried with bell peppers and onions in a spicy sauce', 400),
+(36, 'Sesame Balls', 'Deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds', 150),
+(36, 'Lychee Ice Cream', 'Creamy ice cream flavored with sweet lychees', 200);
 
 
 
@@ -423,63 +399,53 @@ VALUES
 
 
 
-SET @startDate = DATE_SUB(CURDATE(), INTERVAL 3 MONTH);
-SET @endDate = CURDATE();
-
--- Generate random orders for the last 3 months
-SET @i = 1;
-WHILE @i <= 500 DO
-  -- Generate a random user ID, restaurant ID, and driver ID
-  SET @userId = (SELECT user_id FROM users ORDER BY RAND() LIMIT 1);
-  SET @restaurantId = (SELECT restaurant_id FROM restaurants ORDER BY RAND() LIMIT 1);
-  SET @driverId = (SELECT driver_id FROM drivers WHERE city = (SELECT city FROM restaurants WHERE restaurant_id = @restaurantId) ORDER BY RAND() LIMIT 1);
-  
-  -- Generate a random order date within the last 3 months
-  SET @orderDate = DATE_SUB(@endDate, INTERVAL ROUND(RAND() * DATEDIFF(@endDate, @startDate)) DAY);
-  
-  -- Generate a random total between 50 and 500
-  SET @total = ROUND(RAND() * 450 + 50, 2);
-  
-  -- Generate a random status for the order
-  IF @orderDate >= DATE_SUB(CURDATE(), INTERVAL 1 DAY) THEN
-    SET @status = 'Pending';
-  ELSE
-    SET @status = (SELECT status FROM order_statuses ORDER BY RAND() LIMIT 1);
-  END IF;
-  
-  -- Insert the order into the orders table
-  INSERT INTO orders (user_id, restaurant_id, driver_id, total, status, order_date)
-  VALUES (@userId, @restaurantId, @driverId, @total, @status, @orderDate);
-  
-  SET @i = @i + 1;
-END WHILE;
-
--- Set the start and end dates for the promotions
-DECLARE @startDate DATE = DATEADD(day, 1, GETDATE())
-DECLARE @endDate DATE = DATEADD(month, 3, @startDate)
-
--- Generate promotions for each restaurant
-DECLARE @i INT = 1
-WHILE @i <= (SELECT COUNT(*) FROM restaurants)
+DELIMITER $$
+CREATE PROCEDURE generate_orders()
 BEGIN
--- Get the restaurant ID, cuisine, and name
-DECLARE @restaurantId INT = (SELECT restaurant_id FROM restaurants ORDER BY restaurant_id OFFSET @i - 1 ROWS FETCH NEXT 1 ROW ONLY)
-DECLARE @cuisine VARCHAR(50) = (SELECT cuisine FROM restaurants WHERE restaurant_id = @restaurantId)
-DECLARE @restaurantName VARCHAR(100) = (SELECT name FROM restaurants WHERE restaurant_id = @restaurantId)
+  SET @counter = 0;
+  WHILE @counter < 300 DO
+    -- Select a random user
+    SET @user_id = (SELECT user_id FROM users ORDER BY RAND() LIMIT 1);
 
--- Generate a unique promo code for the restaurant
-DECLARE @promoCode VARCHAR(20) = CONCAT(LEFT(@restaurantName, 2), '', LEFT(@cuisine, 2), '', @i)
+    -- Select a random restaurant
+    SET @restaurant_id = (SELECT restaurant_id FROM restaurants ORDER BY RAND() LIMIT 1);
 
--- Generate a random discount between 10% and 50%
-DECLARE @discount DECIMAL(10, 2) = ROUND(RAND() * 0.4 + 0.1, 2)
+    -- Select a random driver
+    SET @driver_id = (SELECT driver_id FROM drivers ORDER BY RAND() LIMIT 1);
 
--- Generate a random start date and end date within the next 3 months
-DECLARE @promoStartDate DATE = DATEADD(day, ROUND(RAND() * 30), @startDate)
-DECLARE @promoEndDate DATE = DATEADD(day, ROUND(RAND() * 30) + 30, @promoStartDate)
+    -- Generate a random order date within the last 30 days
+    SET @order_date = DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY);
 
--- Insert the promotion into the promotions table
+    -- Generate a random total between 100 and 1000
+    SET @total = FLOOR(RAND() * 900) + 100;
+
+    -- Insert the order into the orders table
+    INSERT INTO orders (user_id, restaurant_id, driver_id, total, status, order_date)
+    VALUES (@user_id, @restaurant_id, @driver_id, @total, 'delivered', @order_date);
+
+    -- Increment the counter
+    SET @counter = @counter + 1;
+  END WHILE;
+END$$
+DELIMITER ;
+CALL generate_orders();
+
+-- Promotions
+
 INSERT INTO promotions (restaurant_id, promo_code, discount, start_date, end_date)
-VALUES (@restaurantId, @promoCode, @discount, @promoStartDate, @promoEndDate)
-
-SET @i = @i + 1
-END
+VALUES
+(1, 'PIBA1', 0.15, '2023-04-01', '2023-06-30'),
+(2, 'OCCA1', 0.2, '2023-04-01', '2023-06-30'),
+(3, 'CACA1', 0.25, '2023-04-01', '2023-06-30'),
+(4, 'TAJTEA1', 0.3, '2023-04-01', '2023-06-30'),
+(5, 'MAHABHOG1', 0.35, '2023-04-01', '2023-06-30'),
+(6, 'PARABIR1', 0.4, '2023-04-01', '2023-06-30'),
+(7, 'TUNKA1', 0.15, '2023-04-01', '2023-06-30'),
+(8, 'PETCAT1', 0.2, '2023-04-01', '2023-06-30'),
+(9, 'KARIMS1', 0.25, '2023-04-01', '2023-06-30'),
+(10, 'BIKA1', 0.3, '2023-04-01', '2023-06-30'),
+(11, 'SARAB1', 0.35, '2023-04-01', '2023-06-30'),
+(12, 'NIZAM1', 0.4, '2023-04-01', '2023-06-30'),
+(13, 'PESH1', 0.15, '2023-04-01', '2023-06-30'),
+(14, 'KARA1', 0.2, '2023-04-01', '2023-06-30'),
+(15, 'TRIS1', 0.25, '2023-04-01', '2023-06-30');
