@@ -136,3 +136,256 @@ VALUES
 (10, 'Chana Masala', 'Chickpeas cooked in a spicy tomato-based sauce with spices.', 150),
 (10, 'Aloo Gobi', 'Potatoes and cauliflower cooked in a tomato-based sauce with spices.', 200),
 (10, 'Gulab Jamun', 'Sweet fried dumplings made of milk powder and soaked in syrup.', 100);
+
+-- Populate the menu_items table for 11th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(11, 'Mini Idlis', 'Small, steamed rice cakes served with coconut chutney and sambar.', 150),
+(11, 'Kuzhi Paniyaram', 'Rice batter and lentil dumplings served with coconut chutney and tomato chutney.', 180),
+(11, 'Chicken Chettinad', 'Spicy chicken curry made with freshly ground masala and coconut milk.', 250),
+(11, 'Mutton Sukka', 'Spicy, dry mutton curry made with roasted spices and coconut.', 350),
+(11, 'Neer Dosa', 'Thin, crepe-like dosas made with rice batter and served with coconut chutney and tomato chutney.', 120),
+(11, 'Appam', 'Lacy, fermented rice and coconut pancakes served with chicken or vegetable stew.', 180),
+(11, 'Pongal', 'Rice and lentil porridge made with ghee and topped with cashews and raisins.', 100);
+
+-- Populate the menu_items table for 12th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(12, 'Biryani', 'Long-grained rice flavored with saffron and cooked with meat and aromatic spices.', 300),
+(12, 'Sheermal', 'Sweet, saffron-flavored bread made with maida flour and baked in a tandoor.', 50),
+(12, 'Shami Kebab', 'Spiced meat patties made with minced meat, lentils, and spices.', 150),
+(12, 'Nihari', 'Slow-cooked meat curry made with marrow bones, ginger, and a blend of spices.', 350),
+(12, 'Kebab Platter', 'Assortment of chicken and mutton kebabs served with mint chutney.', 500),
+(12, 'Rogan Josh', 'Rich, creamy lamb curry made with yogurt and flavored with Kashmiri chili.', 350),
+(12, 'Phirni', 'Creamy rice pudding flavored with saffron and cardamom.', 100);
+
+-- Populate the menu_items table for 13th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(13, 'Dal Makhani', 'Creamy black lentils and red kidney beans cooked with butter and cream.', 250),
+(13, 'Butter Chicken', 'Mildly spiced chicken curry made with butter and tomato-based gravy.', 300),
+(13, 'Tandoori Chicken', 'Marinated chicken cooked in a tandoor and served with mint chutney and salad.', 350),
+(13, 'Paneer Tikka Masala', 'Cubes of marinated paneer cooked in a tomato-based gravy.', 280),
+(13, 'Palak Paneer', 'Cubes of paneer cooked in a creamy spinach gravy.', 250),
+(13, 'Garlic Naan', 'Leavened flatbread stuffed with garlic and baked in a tandoor.', 50),
+(13, 'Gulab Jamun', 'Deep-fried dumplings made with milk solids and soaked in sugar syrup.', 100);
+
+-- Populate the menu_items table for 14th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(14, 'Ghee Roast Chicken', 'A spicy and tangy chicken dish with a smoky flavor.', 450),
+(14, 'Neer Dosa', 'A thin, rice crepe that is soft and slightly chewy.', 120),
+(14, 'Mangalorean Fish Curry', 'Fish cooked in a spicy coconut milk based curry.', 500),
+(14, 'Prawn Sukka', 'Prawns cooked in a spicy coconut and onion based masala.', 550),
+(14, 'Kori Rotti', 'A dish made of chicken curry served with crispy, paper-thin wafers made of rice.', 400),
+(14, 'Goli Baje', 'A deep-fried snack made with flour, yogurt, and spices.', 100),
+(14, 'Mysore Pak', 'A sweet made with gram flour, sugar, and lots of ghee.', 150);
+
+-- Populate the menu_items table for 15th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(15, 'Prawn Masala', 'Prawns cooked in a spicy tomato and onion based masala.', 550),
+(15, 'Chicken Sukka', 'Chicken cooked in a spicy coconut and onion based masala.', 450),
+(15, 'Bisi Bele Bath', 'A spicy and flavorful rice dish made with lentils, vegetables, and spices.', 200),
+(15, 'Akki Roti', 'A flatbread made with rice flour and served with coconut chutney and sambar.', 120),
+(15, 'Mysore Masala Dosa', 'A crispy and spicy dosa filled with a potato and onion based masala.', 150),
+(15, 'Puliyogare', 'A tangy and spicy rice dish made with tamarind, jaggery, and spices.', 180),
+(15, 'Holige', 'A sweet flatbread stuffed with a filling made of lentils, jaggery, and coconut.', 100);
+
+-- Populate the menu_items table for 16th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(16, 'Tawa Pomfret', 'Pomfret marinated in spices and cooked on a griddle.', 500),
+(16, 'Surmai Fry', 'Kingfish marinated in spices and fried to perfection.', 550),
+(16, 'Prawn Curry', 'Prawns cooked in a coconut milk and tomato based curry.', 600),
+(16, 'Goan Fish Curry', 'Fish cooked in a spicy and tangy coconut milk based curry.', 500),
+(16, 'Sorpotel', 'A spicy pork stew made with pork meat, liver, and heart.', 450),
+(16, 'Pork Vindaloo', 'A fiery and tangy pork curry made with vinegar and chili.', 400),
+(16, 'Bebinca', 'A layered Goan dessert made with coconut milk, egg yolks, and sugar.', 200);
+
+-- Populate the menu_items table for 17th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(17, 'Mutton Rogan Josh', 'Mutton cooked in a spicy and aromatic gravy.', 500),
+(17, 'Chicken Tikka Masala', 'Grilled chicken cooked in a creamy tomato-based sauce.', 450),
+(17, 'Vegetable Korma', 'Assorted vegetables cooked in a mild, creamy cashew sauce.', 300),
+(17, 'Fish Curry', 'Fish cooked in a spicy and tangy coconut-based sauce.', 400),
+(17, 'Butter Naan', 'Leavened flatbread baked in a tandoor and brushed with butter.', 50),
+(17, 'Garlic Naan', 'Leavened flatbread baked in a tandoor with garlic and butter.', 60),
+(17, 'Pulao', 'Fragrant rice cooked with whole spices and herbs.', 200);
+
+-- Populate the menu_items table for 18th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(18, 'Butter Chicken', 'Tandoori chicken cooked in a creamy tomato-based sauce.', 450),
+(18, 'Lamb Chops', 'Grilled lamb chops marinated in Indian spices.', 700),
+(18, 'Dal Makhani', 'Slow-cooked black lentils and kidney beans in a creamy tomato sauce.', 300),
+(18, 'Fish Fry', 'Fish marinated in a spicy masala and deep-fried.', 400),
+(18, 'Tandoori Roti', 'Unleavened whole wheat flatbread baked in a tandoor.', 40),
+(18, 'Garlic Naan', 'Leavened flatbread baked in a tandoor with garlic and butter.', 60),
+(18, 'Jeera Rice', 'Basmati rice cooked with cumin seeds and spices.', 150);
+
+-- Populate the menu_items table for 19th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(19, 'Butter Chicken', 'Tandoori chicken cooked in a creamy tomato-based sauce.', 450),
+(19, 'Paneer Tikka', 'Cottage cheese marinated in a spicy masala and grilled.', 350),
+(19, 'Dal Tadka', 'Yellow lentils tempered with cumin seeds, garlic, and spices.', 250),
+(19, 'Hyderabadi Biryani', 'Fragrant basmati rice cooked with spices and marinated chicken.', 450),
+(19, 'Butter Naan', 'Leavened flatbread baked in a tandoor and brushed with butter.', 50),
+(19, 'Lachha Paratha', 'Layered whole wheat flatbread cooked on a griddle.', 60),
+(19, 'Raita', 'Whisked yogurt with chopped vegetables and spices.', 100);
+
+-- Populate the menu_items table for 20th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(20, 'Lamb Chops', 'Grilled lamb chops marinated in Indian spices.', 700),
+(20, 'Chicken Tikka', 'Chicken marinated in a spicy yogurt-based marinade and grilled.', 400),
+(20, 'Dal Fry', 'Yellow lentils tempered with cumin seeds, garlic, and spices.', 250),
+(20, 'Goan Fish Curry', 'Fish cooked in a tangy coconut-based sauce with Goan spices.', 400),
+
+-- Populate the menu_items table for 21st restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(21, 'Berry Pulao', 'Rice cooked with chicken and mixed berries.', 350),
+(21, 'Salli Boti', 'Mutton cooked in a tomato-based gravy and topped with crispy potato straws.', 450),
+(21, 'Prawn Patio', 'Prawns cooked in a tangy tomato and onion-based gravy.', 500);
+
+-- Populate the menu_items table for 22nd restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(22, 'Parotta and Beef Fry', 'Kerala-style layered flatbread served with spicy beef fry.', 250),
+(22, 'Kappa Biriyani', 'Tapioca pearls cooked with spicy beef masala.', 300),
+(22, 'Malabar Fish Curry', 'Fish cooked in a coconut and tamarind-based gravy.', 400),
+(22, 'Chemeen Ularthiyathu', 'Prawns cooked with onions, tomatoes, and coconut.', 350);
+
+-- Populate the menu_items table for 23rd restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(23, 'Kakori Kebab', 'Minced lamb kebab spiced with cardamom, cloves, and cinnamon.', 300),
+(23, 'Galawat Kebab', 'Melt-in-the-mouth lamb kebab made with tender meat and spices.', 350),
+(23, 'Murgh Nawabi', 'Chicken cooked in a rich and creamy cashew nut and cream-based gravy.', 400);
+
+-- Populate the menu_items table for 24th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(24, 'Aloo Gobi', 'Potato and cauliflower cooked with turmeric and spices.', 200),
+(24, 'Palak Paneer', 'Paneer cooked in a creamy spinach gravy.', 250),
+(24, 'Butter Chicken', 'Chicken cooked in a creamy tomato-based gravy with butter.', 350);
+
+-- Populate the menu_items table for 25th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(25, 'Sada Dosa', 'Plain rice and lentil crepe.', 100),
+(25, 'Rava Dosa', 'Crispy semolina and rice crepe.', 150),
+(25, 'Mysore Masala Dosa', 'Crispy dosa with a spicy potato filling.', 200),
+(25, 'Onion Uttapam', 'Thick rice and lentil pancake with onions.', 150);
+
+-- Populate the menu_items table for 26th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(26, 'Chicken Biryani', 'Spiced rice and chicken cooked together.', 300),
+(26, 'Lahori Murgh Curry', 'Chicken cooked in a spicy tomato and onion-based gravy.', 350);
+
+-- Populate the menu_items table for 27th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(27, 'Tandoori Chicken', 'Chicken marinated in yogurt and spices, cooked in a tandoor.', 300),
+(27, 'Dal Makhani', 'Lentils cooked with butter and cream, flavored with spices.', 200),
+(27, 'Butter Chicken', 'Chicken cooked in a creamy tomato-based sauce, flavored with spices.', 350),
+(27, 'Garlic Naan', 'Leavened bread with garlic, cooked in a tandoor.', 50);
+
+-- Populate the menu_items table for 28th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(28, 'Butter Chicken', 'Chicken cooked in a creamy tomato-based sauce, flavored with spices.', 400),
+(28, 'Fish Tikka', 'Fish marinated in spices and grilled in a tandoor.', 500),
+(28, 'Chicken Biryani', 'Rice dish with chicken and aromatic spices.', 350);
+
+-- Populate the menu_items table for 29th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(29, 'Chicken Tikka', 'Chicken marinated in yogurt and spices, grilled in a tandoor.', 300),
+(29, 'Butter Naan', 'Leavened bread with butter, cooked in a tandoor.', 50),
+(29, 'Paneer Butter Masala', 'Cottage cheese cooked in a creamy tomato-based sauce, flavored with spices.', 250),
+(29, 'Dal Tadka', 'Lentils tempered with cumin and spices.', 150);
+
+-- Populate the menu_items table for 30th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(30, 'Paneer Tikka', 'Cottage cheese marinated in yogurt and spices, grilled in a tandoor.', 300),
+(30, 'Butter Naan', 'Leavened bread with butter, cooked in a tandoor.', 50),
+(30, 'Chole Bhature', 'Chickpeas cooked in a spicy tomato-based sauce, served with deep-fried bread.', 200);
+
+-- Populate the menu_items table for 31st restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(31, 'Dosa', 'Rice and lentil crepe served with coconut chutney and sambar.', 150),
+(31, 'Idli', 'Steamed rice and lentil cakes served with coconut chutney and sambar.', 100),
+(31, 'Vada', 'Deep-fried lentil fritters served with coconut chutney and sambar.', 100),
+(31, 'Masala Dosa', 'Dosa stuffed with spiced potatoes, served with coconut chutney and sambar.', 200);
+
+-- Populate the menu_items table for 33rd restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(33, 'Sukka Chicken', 'Dry chicken dish cooked with a blend of Indian spices.', 350),
+(33, 'Prawn Ghee Roast', 'Prawns cooked in a spicy and tangy masala with ghee.', 450),
+(33, 'Ghee Rice', 'Aromatic rice cooked with ghee and whole spices.', 200),
+(33, 'Neer Dosa', 'Soft and thin dosa made with rice batter.', 100);
+
+-- Populate the menu_items table for 34th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(34, 'Kothu Parotta', 'Parotta minced and cooked with egg, chicken, and spices.', 200),
+(34, 'Mutton Chukka', 'Dry mutton dish cooked with a blend of South Indian spices.', 350),
+(34, 'Kadai Prawn', 'Prawns cooked in a tomato-based gravy with bell peppers and spices.', 450);
+
+-- Populate the menu_items table for 35th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(35, 'Gujarati Thali', 'A traditional Gujarati platter consisting of dal, kadhi, shaak, roti, rice, and dessert.', 400),
+(35, 'Undhiyu', 'A mixed vegetable dish cooked with a blend of spices.', 300),
+(35, 'Khandvi', 'Soft and thin gram flour rolls filled with coconut and spices.', 150);
+
+-- Populate the menu_items table for 36th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(36, 'Chicken Biryani', 'Flavorful rice dish cooked with chicken and aromatic spices.', 350),
+(36, 'Hyderabadi Haleem', 'A stew made with lamb, lentils, and wheat, slow-cooked for hours.', 250),
+(36, 'Lukhmi', 'A pastry filled with minced meat and spices.', 150);
+
+-- Populate the menu_items table for 37th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(37, 'Prawn Gassi', 'Prawns cooked in a coconut-based gravy with aromatic spices.', 450),
+(37, 'Kori Rotti', 'A Mangalorean dish consisting of chicken curry and crispy rice wafers.', 350),
+(37, 'Pineapple Gojju', 'A sweet and sour dish made with pineapple and coconut.', 150);
+
+-- Populate the menu_items table for 38th restaurant
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(38, 'Keema Pao', 'Minced meat cooked with spices served with bread.', 200),
+(38, 'Butter Chicken', 'Tandoori chicken cooked in a creamy tomato-based gravy.', 350),
+(38, 'Rogan Josh', 'Lamb cooked in a spicy and aromatic gravy.', 400);
+
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(39, 'Butter Chicken', 'Boneless chicken pieces cooked in a rich tomato and cream-based gravy', 450),
+(39, 'Dal Makhani', 'Slow-cooked black lentils in a creamy tomato gravy, finished with butter and cream', 300),
+(39, 'Tandoori Chicken', 'Chicken marinated in spices and grilled in a tandoor oven', 500),
+(39, 'Paneer Tikka', 'Cubes of paneer marinated in spices and grilled in a tandoor oven', 350),
+(39, 'Lachha Paratha', 'Multi-layered whole wheat bread cooked on a tawa', 70),
+(39, 'Naan', 'Leavened bread made with refined flour, baked in a tandoor oven', 60),
+(39, 'Jeera Rice', 'Basmati rice flavored with cumin seeds', 120),
+(39, 'Chicken Biryani', 'Fragrant basmati rice cooked with chicken and spices', 300),
+(39, 'Raita', 'Yogurt mixed with chopped onions, tomatoes, and cucumbers, seasoned with cumin', 80),
+(40, 'Hot and Sour Soup', 'Spicy and tangy soup made with mushrooms, bamboo shoots, and tofu', 250),
+(40, 'Kung Pao Chicken', 'Stir-fried chicken with peanuts, bell peppers, and dried red chilies', 450),
+(40, 'Szechuan Prawns', 'Stir-fried prawns with vegetables in a spicy Szechuan sauce', 550),
+(40, 'Vegetable Fried Rice', 'Fried rice made with mixed vegetables and soy sauce', 200),
+(40, 'Vegetable Manchurian', 'Deep-fried vegetable balls in a spicy sauce', 350),
+(40, 'Hakka Noodles', 'Stir-fried noodles made with vegetables and soy sauce', 250),
+(40, 'Chilli Paneer', 'Cubes of paneer stir-fried with bell peppers and onions in a spicy sauce', 400),
+(40, 'Sesame Balls', 'Deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds', 150),
+(40, 'Lychee Ice Cream', 'Creamy ice cream flavored with sweet lychees', 200);
+
