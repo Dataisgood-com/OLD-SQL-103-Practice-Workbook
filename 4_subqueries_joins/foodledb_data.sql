@@ -70,4 +70,69 @@ VALUES
 ('Rajinder Da Dhaba', 'AB 14, Safdarjung Enclave Market, Safdarjung, New Delhi', '01126100359', 'North Indian', 4.1),
 ('The China Kitchen', 'Hyatt Regency, Bhikaji Cama Place, New Delhi', '01166771334', 'Chinese', 4.4);
 
+-- Pind Balluchi
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(1, 'Butter Chicken', 'Boneless chicken cooked in tomato, cream and butter sauce.', 350),
+(1, 'Dal Makhani', 'Black lentils cooked with butter and cream.', 250),
+(1, 'Mutton Rogan Josh', 'Mutton cooked in spicy onion-tomato gravy.', 450),
+(1, 'Paneer Tikka', 'Cubes of cottage cheese marinated in spices and grilled.', 300),
+(1, 'Tandoori Chicken', 'Chicken marinated in yogurt and spices, grilled in tandoor.', 400);
 
+-- Oh Calcutta
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(2, 'Bhetki Paturi', 'Bhetki fish marinated with mustard paste and steamed in banana leaf.', 550),
+(2, 'Kosha Mangsho', 'Mutton cooked in spicy onion-tomato gravy.', 450),
+(2, 'Aloo Posto', 'Potatoes cooked in poppy seed paste.', 250),
+(2, 'Chingri Malai Curry', 'Prawns cooked in coconut milk and spices.', 650),
+(2, 'Kolkata Biryani', 'Rice cooked with meat or vegetables and spices, served with egg and potato.', 450);
+
+-- Carnatic Cafe
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(3, 'Idli', 'Steamed rice and lentil cake, served with coconut chutney and sambar.', 70),
+(3, 'Dosa', 'Fermented crepe made of rice batter and black lentils, served with coconut chutney and sambar.', 120),
+(3, 'Uthappam', 'Thick pancake made of rice and lentil batter, topped with onions and tomatoes.', 100),
+(3, 'Pongal', 'Rice and lentil porridge, served with coconut chutney and sambar.', 90),
+(3, 'Filter Coffee', 'South Indian coffee made with brewed coffee and milk.', 50);
+
+-- Taj Mahal Tea House
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(4, 'Masala Chai', 'Indian spiced tea made with milk and spices.', 80),
+(4, 'Assam Tea', 'Black tea from the Assam region of India.', 70),
+(4, 'Darjeeling Tea', 'Black tea from the Darjeeling region of India.', 80),
+(4, 'Scones', 'English style tea time scones, served with clotted cream and jam.', 200),
+(4, 'Sandwiches', 'Assorted sandwiches made with fresh bread and fillings like chicken, egg, and vegetables.', 300);
+
+-- Maharaja Bhog
+INSERT INTO menu_items (restaurant_id, name, description, price)
+VALUES
+(5, 'Gujarati Thali', 'A complete meal with a variety of vegetarian dishes like dal, vegetables, roti, rice, and dessert.', 500),
+(5, 'Kachori', 'Deep fried snack made of flour and filled with spiced lentils.', 80),
+(5, 'Gatte Ki Sabzi', 'Curry made with gram flour dumplings and yogurt gravy.', 200),
+(5, 'Shrikhand', 'Sweet yogurt dessert flavored with saffron and cardamom.', 100),
+(5, 'Kaju Katli', 'Diamond-shaped cashew nut sweet.', 200),
+(5, 'Gulab Jamun', 'Milk-solid-based sweet fried and soaked in sugar syrup.', 150),
+(6, 'Chicken Biryani', 'Flavorful basmati rice cooked with chicken and spices.', 300),
+(6, 'Hyderabadi Dum Biryani', 'Famous Hyderabadi dish of slow-cooked basmati rice with chicken, mutton, or vegetables.', 350),
+(6, 'Mirchi ka Salan', 'Spicy curry made with green chilies and peanuts.', 200),
+(7, 'Tunday Kabab', 'Famous Awadhi dish of tender and spicy minced meat patties.', 250),
+(7, 'Korma', 'Mughlai dish of meat or vegetables cooked in a creamy and aromatic sauce.', 300),
+(7, 'Sheermal', 'Sweet and soft saffron-flavored bread.', 50),
+(8, 'Chelo Kebab', 'Iranian dish of saffron rice served with grilled kebabs.', 350),
+(8, 'Baida Roti', 'Egg-filled flatbread.', 150),
+(8, 'Mutton Kheema', 'Spiced minced mutton dish.', 250),
+(9, 'Thali', 'A complete meal served on a platter, typically including rice, bread, dal, vegetables, and curries.', 400),
+(9, 'Rajasthani Kadhi', 'Yogurt-based curry with gram flour and spices.', 200),
+(9, 'Gatte ki Sabzi', 'Rajasthani dish of gram flour dumplings in a spicy tomato-based curry.', 250),
+(10, 'Butter Chicken', 'Tandoori chicken cooked in a creamy tomato-based sauce.', 350),
+(10, 'Dal Makhani', 'Slow-cooked black lentils in a creamy and buttery tomato-based sauce.', 250),
+(10, 'Naan', 'Leavened flatbread typically baked in a tandoor.', 50),
+(10, 'Tandoori Chicken', 'Chicken marinated in yogurt and spices and cooked in a tandoor.', 250),
+(10, 'Butter Chicken', 'Chicken cooked in a creamy tomato-based sauce with spices and butter.', 300),
+(10, 'Palak Paneer', 'Paneer cooked in a spinach-based gravy with spices.', 200),
+(10, 'Chana Masala', 'Chickpeas cooked in a spicy tomato-based sauce with spices.', 150),
+(10, 'Aloo Gobi', 'Potatoes and cauliflower cooked in a tomato-based sauce with spices.', 200),
+(10, 'Gulab Jamun', 'Sweet fried dumplings made of milk powder and soaked in syrup.', 100);
