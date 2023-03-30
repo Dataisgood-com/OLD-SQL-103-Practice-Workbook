@@ -389,18 +389,6 @@ VALUES
 (40, 'Sesame Balls', 'Deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds', 150),
 (40, 'Lychee Ice Cream', 'Creamy ice cream flavored with sweet lychees', 200);
 
--- Sample data for the orders table
-INSERT INTO orders (user_id, restaurant_id, total, status, order_date)
-SELECT 
-  ROUND(RAND() * 20) + 1, -- random user IDs
-  ROUND(RAND() * 15) + 11, -- random restaurant IDs
-  ROUND(RAND() * 3000) + 500, -- random total amount between 500 and 3500
-  IF(DATEDIFF(NOW(), DATE_ADD(DATE(NOW()), INTERVAL -2 DAY)) > 0, -- check if order is pending based on current date
-    IF(DATEDIFF(NOW(), DATE_ADD(order_date, INTERVAL 2 DAY)) <= 0, 'pending', 'completed'), 'completed'), -- set status based on order date
-  DATE_ADD(DATE(NOW()), INTERVAL -ROUND(RAND() * 365) DAY) -- random order date within the past year
-FROM
-  information_schema.TABLES T1,
-  information_schema.TABLES T2;
 
 
 INSERT INTO drivers (name, phone_number, location)
@@ -430,3 +418,37 @@ VALUES
 ('Aditi Mittal', '9876543232', 'Mumbai'),
 ('Urooj Ashfaq', '9876543233', 'Mumbai'),
 ('Rahul Dua', '9876543234', 'Mumbai');
+
+
+
+SET @startDate = DATE_SUB(CURDATE(), INTERVAL 3 MONTH);
+SET @endDate = CURDATE();
+
+-- Generate random orders for the last 3 months
+SET @i = 1;
+WHILE @i <= 500 DO
+  -- Generate a random user ID, restaurant ID, and driver ID
+  SET @userId = (SELECT user_id FROM users ORDER BY RAND() LIMIT 1);
+  SET @restaurantId = (SELECT restaurant_id FROM restaurants ORDER BY RAND() LIMIT 1);
+  SET @driverId = (SELECT driver_id FROM drivers WHERE city = (SELECT city FROM restaurants WHERE restaurant_id = @restaurantId) ORDER BY RAND() LIMIT 1);
+  
+  -- Generate a random order date within the last 3 months
+  SET @orderDate = DATE_SUB(@endDate, INTERVAL ROUND(RAND() * DATEDIFF(@endDate, @startDate)) DAY);
+  
+  -- Generate a random total between 50 and 500
+  SET @total = ROUND(RAND() * 450 + 50, 2);
+  
+  -- Generate a random status for the order
+  IF @orderDate >= DATE_SUB(CURDATE(), INTERVAL 1 DAY) THEN
+    SET @status = 'Pending';
+  ELSE
+    SET @status = (SELECT status FROM order_statuses ORDER BY RAND() LIMIT 1);
+  END IF;
+  
+  -- Insert the order into the orders table
+  INSERT INTO orders (user_id, restaurant_id, driver_id, total, status, order_date)
+  VALUES (@userId, @restaurantId, @driverId, @total, @status, @orderDate);
+  
+  SET @i = @i + 1;
+END WHILE;
+
